@@ -1,0 +1,94 @@
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    outline-style: none;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+
+/* Main CSS */
+html {
+    width: 100%;
+    min-height: 100%;
+    background: url(../images/sampleHeader.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.panel {
+    background-color: aliceblue;
+    width: 95%;
+    margin: 0 auto;
+    opacity: .98;
+}
+
+header {
+    height: 8rem;
+    position: relative;
+}
+
+header > h1 {
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+}
+
+#placeholder{
+    height: 100%;
+    position: relative;
+}
+
+#profilePic {
+    border: 5px solid #bdd1e2;
+    border-radius: 50%;
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+    width: 15%;
+}
+
+#mainFooter {
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Navigation */
+#nav {
+    margin-bottom: 10rem;
+}
+
+#nav > ul {
+    padding-bottom: .25rem;
+    text-align: center;
+}
+
+#nav > ul > li{
+    display: inline;
+    border: 1px dashed red; 
+}
+
+#nav > ul > li{
+    display: inline-block;
+    border: 1px dashed red;
+    width: 10%; 
+}
