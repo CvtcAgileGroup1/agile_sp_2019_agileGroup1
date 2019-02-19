@@ -45,6 +45,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -123,6 +124,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="GameExample.aspx" />
     <Content Include="ProfileExample.aspx" />
+    <Content Include="AddEvent.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -199,6 +201,13 @@
     </Compile>
     <Compile Include="ProfileExample.aspx.designer.cs">
       <DependentUpon>ProfileExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEvent.aspx.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEvent.aspx.designer.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

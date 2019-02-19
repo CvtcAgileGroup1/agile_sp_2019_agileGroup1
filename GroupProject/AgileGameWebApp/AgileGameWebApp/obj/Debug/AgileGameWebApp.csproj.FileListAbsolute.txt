@@ -140,3 +140,6 @@ C:\Users\hheimstead3\Documents\GitHub\agile_sp_2019_agileGroup1\GroupProject\Agi
 C:\Users\hheimstead3\Documents\GitHub\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp\obj\Debug\AgileGameWebApp.csproj.CopyComplete
 C:\Users\hheimstead3\Documents\GitHub\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp\obj\Debug\AgileGameWebApp.dll
 C:\Users\hheimstead3\Documents\GitHub\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp\obj\Debug\AgileGameWebApp.pdb
+D:\OneDrive\CVTC\Agile\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp\bin\MySql.Data.dll
+D:\OneDrive\CVTC\Agile\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp\bin\Google.Protobuf.dll
+D:\OneDrive\CVTC\Agile\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp\bin\MySql.Data.xml
