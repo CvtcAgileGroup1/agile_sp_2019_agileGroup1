@@ -124,7 +124,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="GameExample.aspx" />
     <Content Include="ProfileExample.aspx" />
-    <Content Include="AddEvent.aspx" />
+    <Content Include="AddEventExample.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -202,12 +202,12 @@
     <Compile Include="ProfileExample.aspx.designer.cs">
       <DependentUpon>ProfileExample.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddEvent.aspx.cs">
-      <DependentUpon>AddEvent.aspx</DependentUpon>
+    <Compile Include="AddEventExample.aspx.cs">
+      <DependentUpon>AddEventExample.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddEvent.aspx.designer.cs">
-      <DependentUpon>AddEvent.aspx</DependentUpon>
+    <Compile Include="AddEventExample.aspx.designer.cs">
+      <DependentUpon>AddEventExample.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
