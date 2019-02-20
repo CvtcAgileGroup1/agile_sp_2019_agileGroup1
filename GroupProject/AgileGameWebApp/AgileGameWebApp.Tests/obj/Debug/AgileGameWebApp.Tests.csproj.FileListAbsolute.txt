@@ -42,3 +42,6 @@ C:\Users\hheimstead3\Documents\GitHub\agile_sp_2019_agileGroup1\GroupProject\Agi
 C:\Users\hheimstead3\Documents\GitHub\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp.Tests\obj\Debug\AgileGameWebApp.Tests.csproj.CopyComplete
 C:\Users\hheimstead3\Documents\GitHub\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp.Tests\obj\Debug\AgileGameWebApp.Tests.dll
 C:\Users\hheimstead3\Documents\GitHub\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp.Tests\obj\Debug\AgileGameWebApp.Tests.pdb
+D:\OneDrive\CVTC\Agile\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp.Tests\bin\Debug\MySql.Data.dll
+D:\OneDrive\CVTC\Agile\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp.Tests\bin\Debug\Google.Protobuf.dll
+D:\OneDrive\CVTC\Agile\agile_sp_2019_agileGroup1\GroupProject\AgileGameWebApp\AgileGameWebApp.Tests\bin\Debug\MySql.Data.xml
