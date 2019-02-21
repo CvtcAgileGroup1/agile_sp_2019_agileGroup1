@@ -35,6 +35,7 @@ html {
     width: 95%;
     margin: 0 auto;
     opacity: .98;
+    border-bottom:  10px solid #e3e0cf;
 }
 
 header {
@@ -131,6 +132,8 @@ wrapper {
     text-align: center;
     padding-top: 40px;
     background-color: #e3e0cf;
+    border-top:  10px solid #9fa8a3;
+
 }
 
 /* Navigation */
@@ -172,7 +175,8 @@ a{
     background-color: #9fa8a3; 
     padding: 0.525rem;
     margin-top: 0.5125rem;
-    
+    border-bottom:  3px solid #e3e0cf;
+
 }
 
 main{
