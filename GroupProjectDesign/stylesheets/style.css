@@ -32,10 +32,11 @@ html {
 
 .panel {
     background-color: #9fa8a3;
-    width: 95%;
+    width: 99.5%;
     margin: 0 auto;
     opacity: .98;
     border-bottom:  10px solid #e3e0cf;
+    z-index: 2;
 }
 
 header {
@@ -59,64 +60,37 @@ h4 {
     color: black;
 }
 
-#placeholder{
-    height: 100%;
-    position: relative;
-}
-
-#profilePic {
-    border: 5px solid #bdd1e2;
-    border-radius: 50%;
-    position: absolute;
-    top: 12rem;
-    left: 5rem;
-    width: 15%;
-}
-
 #profileCard {
     width: 100px;
     height: 100px;
 }
 
 h3 {
-    
     text-align: center;
     margin-top: 10px;
-    
 }
 
 
 
 img.textlogo {
-    
     float: right;
     padding: 10px;
     margin-top: 25px;
     margin-right: 15px;
-    
 }
 
 img.imagelogo {
-    
-    
-    
+    padding-left: 1rem;
 }
 
-
-img {
-    
-    padding: 15px;
-    
-}
 
 img.avatar {
     
   border-radius: 150px; 
   border: 10px solid #e3e0cf;
   margin-top: -30px;
-  z-index: 1; 
+  z-index: 3; 
   position:relative;
-    
 }
 
 wrapper {
@@ -126,14 +100,12 @@ wrapper {
 }
 
 #mainFooter {
-    height: 5rem;
+    height: 1.5rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
     text-align: center;
     padding-top: 40px;
     background-color: #e3e0cf;
     border-top:  10px solid #9fa8a3;
-
 }
 
 /* Navigation */
@@ -145,6 +117,8 @@ wrapper {
     position: fixed;
     height: 100%;
     overflow: auto;
+    top: 0;
+    z-index: 0;
 
 }
 
@@ -160,11 +134,19 @@ wrapper {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 10px;
+    position: absolute;
+    top: 12rem;
+    left: 1.6rem;
+    
+    
 }
 
 #nav > ul {
     padding-bottom: 0.625rem;
     text-align: center;
+    position: absolute;
+    top: 15rem;
+    left: 1rem;
 }
 
 a{
