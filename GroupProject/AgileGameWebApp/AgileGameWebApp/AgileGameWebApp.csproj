@@ -111,6 +111,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -123,8 +124,24 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="GameExample.aspx" />
+    <Content Include="images\Avatar1.jpg" />
+    <Content Include="images\Avatar2.jpg" />
+    <Content Include="images\Avatar3.jpg" />
+    <Content Include="images\Avatar4.jpg" />
+    <Content Include="images\Avatar5.jpg" />
+    <Content Include="images\Avatar6.jpg" />
+    <Content Include="images\GAMEBOOk_image_logo.png" />
+    <Content Include="images\GAMEBOOK_text_logo.png" />
+    <Content Include="images\profileSample.png" />
+    <Content Include="images\sampleHeader.jpg" />
+    <Content Include="images\sampleHeader.png" />
+    <Content Include="images\Screen Shot 2019-02-15 at 9.37.15 PM.png" />
+    <Content Include="images\Screen Shot 2019-02-17 at 3.16.19 PM.png" />
+    <Content Include="images\websiteMockup-2.jpg" />
+    <Content Include="images\WHITEBACKGround2.jpg" />
     <Content Include="ProfileExample.aspx" />
     <Content Include="AddEventExample.aspx" />
+    <Content Include="GroupExample.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -208,6 +225,13 @@
     </Compile>
     <Compile Include="AddEventExample.aspx.designer.cs">
       <DependentUpon>AddEventExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupExample.aspx.cs">
+      <DependentUpon>GroupExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupExample.aspx.designer.cs">
+      <DependentUpon>GroupExample.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

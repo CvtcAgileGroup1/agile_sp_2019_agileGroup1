@@ -1,15 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameExample.aspx.cs" Inherits="AgileGameWebApp.WebForm1" %>
-
-<asp:Content ID="head" ContentPlaceHolderID="head" runat="server">
-    <title>Events</title>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GroupExample.aspx.cs" Inherits="AgileGameWebApp.WebForm4" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <title>Events</title>
     
     <link rel="stylesheet" href="content/style.css">
 </asp:Content>
-
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-     <div id="wrapper">
+    <div id="wrapper">
         
         <header class="panel">
             
@@ -60,5 +56,4 @@
         </footer>
         
     </div>
-
 </asp:Content>
