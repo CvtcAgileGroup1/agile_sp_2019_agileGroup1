@@ -166,3 +166,7 @@ main{
     margin-left: 9.375rem;
     padding-left: 0.625rem;
 }
+
+#mainFooter{
+    position: center;
+}
