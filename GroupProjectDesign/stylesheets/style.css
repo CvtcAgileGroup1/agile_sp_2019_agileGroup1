@@ -93,10 +93,18 @@ img.avatar {
   position:relative;
 }
 
-wrapper {
+content {
+    position: absolute;
+    left: 23rem;
+    width: calc(100% - 32.6rem);
+    height: calc(100% - 5.5rem);
+    background-color: rgb(159, 168, 163, .4);
     
-    background-color: white;
-    
+}
+
+content p {
+    margin-top: 1rem;
+    margin-left: 3rem;
 }
 
 #mainFooter {
