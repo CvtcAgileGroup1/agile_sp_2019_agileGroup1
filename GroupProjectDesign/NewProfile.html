@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Games</title>
+    <title>NewProfile</title>
 
     <link rel="stylesheet" href="stylesheets/style.css">
 
@@ -47,15 +47,38 @@
             <div id="profileCard">
 
                 <img class="avatar" height="220px" src="images/Avatar5.jpg">
-                <button id="newProfile" type="button">New Profile</button>
                 
             </div>
 
             <content>
 
-                <p>suuper</p>
-                
+                <label id="inputUser">Input Username:</label>
+                <textarea id="nameArea" rows="1" cols="25">
+                    Username
+                </textarea>
 
+                <br>
+
+                <label id="inputEmail">Input Email:</label>
+                <textarea id="emailInfo" rows="1" cols="25">
+                    Email
+                </textarea>
+
+                <br>
+
+                <label id="inputLocal">Input Location:</label>
+                <textarea id="localInfo" rows="1" cols="25">
+                    Location
+                </textarea>
+
+                <br>
+                
+                <label id="inputInfo">Info:</label>
+                <textarea id="bioInfo" rows="6" cols="30">
+                    Tell us about yourself
+                </textarea>
+
+                <button id="submitProfile" type="button">Submit Profile</button>
             </content>
 
         </main>
