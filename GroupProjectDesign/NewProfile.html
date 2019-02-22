@@ -43,40 +43,45 @@
         </div>
 
         <main>
-
-            <div id="profileCard">
-
-                <img class="avatar" height="220px" src="images/Avatar5.jpg">
-                
-            </div>
-
+            
             <content>
-
-                <label id="inputUser">Input Username:</label>
+                <label for="nameArea" id="inputUser">Input Username:</label>
                 <textarea id="nameArea" rows="1" cols="25">
                     Username
                 </textarea>
 
                 <br>
 
-                <label id="inputEmail">Input Email:</label>
+                <lable for="avatarInfo" id="avatarChoice">Choose Avatar:</lable>
+                <select id="avatarInfo">
+                    <option value="images/Avatar1.jpg">Blue Logo</option>
+                    <option value="images/Avatar2.jpg">Orange Logo</option>
+                    <option value="images/Avatar3.jpg">Yellow Logo</option>
+                    <option value="images/Avatar4.jpg">Blue Logo</option>
+                    <option value="images/Avatar5.jpg">Green Logo</option>
+                    <option value="">Pink Logo</option>
+                </select>
+
+                <label for="emailInfo" id="inputEmail">Input Email:</label>
                 <textarea id="emailInfo" rows="1" cols="25">
                     Email
                 </textarea>
 
                 <br>
 
-                <label id="inputLocal">Input Location:</label>
+                <label for="localInfo" id="inputLocal">Input Location:</label>
                 <textarea id="localInfo" rows="1" cols="25">
                     Location
                 </textarea>
 
                 <br>
-                
-                <label id="inputInfo">Info:</label>
+
+                <label for="bioInfo" id="inputInfo">Info:</label>
                 <textarea id="bioInfo" rows="6" cols="30">
                     Tell us about yourself
                 </textarea>
+                
+                <br>
 
                 <button id="submitProfile" type="button">Submit Profile</button>
             </content>
