@@ -178,3 +178,16 @@ main{
 #mainFooter{
     position: center;
 }
+
+select > avatarInfo {
+    position: center;
+}
+
+
+button > submitProfile {
+
+    position: center;
+
+}
+
+
