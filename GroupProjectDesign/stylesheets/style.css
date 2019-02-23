@@ -146,7 +146,6 @@ content p {
     top: 12rem;
     left: 1.6rem;
     
-    
 }
 
 #nav > ul {
@@ -190,4 +189,15 @@ button > submitProfile {
 
 }
 
+label {
 
+    font-size: 19px;
+
+}
+
+textarea > bioInfo {
+
+    position: relative;
+    background-position-x: 5px;
+
+}
