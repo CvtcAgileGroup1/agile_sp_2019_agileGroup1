@@ -24,14 +24,16 @@ DROP TABLE IF EXISTS `event`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `event` (
   `eventID` int(11) NOT NULL AUTO_INCREMENT,
-  `eName` varchar(45) DEFAULT NULL,
+  `eName` varchar(45) NOT NULL,
   `description` varchar(255) DEFAULT NULL,
   `location` varchar(50) DEFAULT NULL,
-  `dateStart` date DEFAULT NULL,
-  `dateEnd` date DEFAULT NULL,
-  `public` int(11) DEFAULT NULL,
+  `public` int(1) DEFAULT NULL,
+  `startTime` time DEFAULT NULL,
+  `endTime` time DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `numPeople` int(3) DEFAULT NULL,
   PRIMARY KEY (`eventID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +42,7 @@ CREATE TABLE `event` (
 
 LOCK TABLES `event` WRITE;
 /*!40000 ALTER TABLE `event` DISABLE KEYS */;
+INSERT INTO `event` VALUES (1,'Game Night','Game Night','Eau Claire',1,'00:00:00','00:00:00','2018-01-01',5);
 /*!40000 ALTER TABLE `event` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -147,6 +150,7 @@ CREATE TABLE `userevent` (
 
 LOCK TABLES `userevent` WRITE;
 /*!40000 ALTER TABLE `userevent` DISABLE KEYS */;
+INSERT INTO `userevent` VALUES (1,8);
 /*!40000 ALTER TABLE `userevent` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -209,4 +213,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-02-17  9:06:58
+-- Dump completed on 2019-02-26 13:01:29
