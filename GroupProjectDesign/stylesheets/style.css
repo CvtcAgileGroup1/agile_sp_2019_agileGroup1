@@ -192,12 +192,46 @@ button > submitProfile {
 label {
 
     font-size: 19px;
+    font-family: sans-serif;
+
+}
+
+textarea > nameArea {
+
+    position: relative;
+
+    border: 3px solid #000000
+
+}
+
+textarea > avatarInfo {
+
+    position: relative;
+
+    border: 3px solid #000000
+
+}
+
+textarea > emailInfo {
+
+    position: relative;
+
+    border: 3px solid #000000
+
+}
+
+textarea > localInfo {
+
+    position: relative;
+
+    border: 3px solid #000000
 
 }
 
 textarea > bioInfo {
 
     position: relative;
-    background-position-x: 5px;
+    left: 10px;
+    border: 3px solid #000000
 
 }

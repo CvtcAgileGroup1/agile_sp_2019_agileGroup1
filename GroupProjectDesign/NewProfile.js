@@ -9,7 +9,6 @@ $(function submitProfile() {
         var email = document.getElementById("emailInfo").value;
         var local = document.getElementById("localInfo").value;
         var bio = document.getElementById("bioInfo").value;
-
     });
 });
 
