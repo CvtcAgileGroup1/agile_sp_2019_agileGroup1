@@ -148,6 +148,24 @@ namespace AgileGameWebApp {
         protected global::System.Web.UI.WebControls.RangeValidator rvDateStart;
         
         /// <summary>
+        /// lblTimeStart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTimeStart;
+        
+        /// <summary>
+        /// ddTimeStart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddTimeStart;
+        
+        /// <summary>
         /// lblDateEnd control.
         /// </summary>
         /// <remarks>
@@ -202,6 +220,33 @@ namespace AgileGameWebApp {
         protected global::System.Web.UI.WebControls.RangeValidator rvDateEnd;
         
         /// <summary>
+        /// lblEndDateInvalid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEndDateInvalid;
+        
+        /// <summary>
+        /// lblTimeEnd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTimeEnd;
+        
+        /// <summary>
+        /// ddTimeEnd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddTimeEnd;
+        
+        /// <summary>
         /// lblPublic control.
         /// </summary>
         /// <remarks>
@@ -227,6 +272,42 @@ namespace AgileGameWebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rdoPrivacy;
+        
+        /// <summary>
+        /// lblNumberOfPeople control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNumberOfPeople;
+        
+        /// <summary>
+        /// txtNumPeople control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtNumPeople;
+        
+        /// <summary>
+        /// rfv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv;
+        
+        /// <summary>
+        /// lblNotAValidNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNotAValidNumber;
         
         /// <summary>
         /// Button1 control.

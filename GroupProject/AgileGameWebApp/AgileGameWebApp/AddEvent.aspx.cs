@@ -27,7 +27,7 @@ namespace AgileGameWebApp
             rvDateStart.MaximumValue = DateTime.Now.Date.AddYears(5).ToString("yyyy-MM-dd");
 
             rvDateEnd.MinimumValue = DateTime.Now.Date.ToString("yyyy-MM-dd");
-            rvDateEnd.MaximumValue = DateTime.Now.Date.AddYears(5).ToString("yyyy-MM-dd");
+            rvDateEnd.MaximumValue = DateTime.Now.Date.AddYears(5).ToString("yyyy-MM-dd HH:MI:SS");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -42,26 +42,198 @@ namespace AgileGameWebApp
 
         private void addEvent()
         {
-            DateTime eventStart = DateTime.Parse(txtDateStart.Text);
-            DateTime eventEnd = DateTime.Parse(txtDateEnd.Text);
-            if (eventEnd >= eventStart) {
+
+            string timeStart = "";
+            int startCase = ddTimeStart.SelectedIndex;
+            string timeEnd = "";
+            int endCase = ddTimeEnd.SelectedIndex;
+            int numPeople = 0;
+            
+            switch (startCase)
+            {
+                case 0:
+                    timeStart = "00:00:01";
+                    break;
+                case 1:
+                    timeStart = "01:00:01";
+                    break;
+                case 2:
+                    timeStart = "02:00:01";
+                    break;
+                case 3:
+                    timeStart = "03:00:01";
+                    break;
+                case 4:
+                    timeStart = "04:00:01";
+                    break;
+                case 5:
+                    timeStart = "05:00:01";
+                    break;
+                case 6:
+                    timeStart = "06:00:01";
+                    break;
+                case 7:
+                    timeStart = "07:00:01";
+                    break;
+                case 8:
+                    timeStart = "08:00:01";
+                    break;
+                case 9:
+                    timeStart = "09:00:01";
+                    break;
+                case 10:
+                    timeStart = "10:00:01";
+                    break;
+                case 11:
+                    timeStart = "11:00:01";
+                    break;
+                case 12:
+                    timeStart = "12:00:01";
+                    break;
+                case 13:
+                    timeStart = "13:00:01";
+                    break;
+                case 14:
+                    timeStart = "14:00:01";
+                    break;
+                case 15:
+                    timeStart = "15:00:01";
+                    break;
+                case 16:
+                    timeStart = "16:00:01";
+                    break;
+                case 17:
+                    timeStart = "17:00:01";
+                    break;
+                case 18:
+                    timeStart = "18:00:01";
+                    break;
+                case 19:
+                    timeStart = "19:00:01";
+                    break;
+                case 20:
+                    timeStart = "20:00:01";
+                    break;
+                case 21:
+                    timeStart = "21:00:01";
+                    break;
+                case 22:
+                    timeStart = "22:00:01";
+                    break;
+                case 23:
+                    timeStart = "23:00:01";
+                    break;
+            }
+
+            switch (endCase)
+            {
+                case 0:
+                    timeEnd = "00:00:01";
+                    break;
+                case 1:
+                    timeEnd = "01:00:01";
+                    break;
+                case 2:
+                    timeEnd = "02:00:01";
+                    break;
+                case 3:
+                    timeEnd = "03:00:01";
+                    break;
+                case 4:
+                    timeEnd = "04:00:01";
+                    break;
+                case 5:
+                    timeEnd = "05:00:01";
+                    break;
+                case 6:
+                    timeEnd = "06:00:01";
+                    break;
+                case 7:
+                    timeEnd = "07:00:01";
+                    break;
+                case 8:
+                    timeEnd = "08:00:01";
+                    break;
+                case 9:
+                    timeEnd = "09:00:01";
+                    break;
+                case 10:
+                    timeEnd = "10:00:01";
+                    break;
+                case 11:
+                    timeEnd = "11:00:01";
+                    break;
+                case 12:
+                    timeEnd = "12:00:01";
+                    break;
+                case 13:
+                    timeEnd = "13:00:01";
+                    break;
+                case 14:
+                    timeEnd = "14:00:01";
+                    break;
+                case 15:
+                    timeEnd = "15:00:01";
+                    break;
+                case 16:
+                    timeEnd = "16:00:01";
+                    break;
+                case 17:
+                    timeEnd = "17:00:01";
+                    break;
+                case 18:
+                    timeEnd = "18:00:01";
+                    break;
+                case 19:
+                    timeEnd = "19:00:01";
+                    break;
+                case 20:
+                    timeEnd = "20:00:01";
+                    break;
+                case 21:
+                    timeEnd = "21:00:01";
+                    break;
+                case 22:
+                    timeEnd = "22:00:01";
+                    break;
+                case 23:
+                    timeEnd = "23:00:01";
+                    break;
+            }
+
+
+            DateTime eventStart = DateTime.Parse(txtDateStart.Text + " " + timeStart);
+            DateTime eventEnd = DateTime.Parse(txtDateEnd.Text + " " + timeEnd);
+
+
+            bool peopleIsInt = int.TryParse(txtNumPeople.Text, out numPeople);
+
+            if (eventEnd < eventStart) {
+
+                lblEndDateInvalid.Visible = true;
+                
+            } else if (peopleIsInt == false)
+            {
+                lblNotAValidNumber.Visible = true;
+                
+            } else
+            {
                 //String connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
 
                 //conn = new MySql.Data.MySqlClient.MySqlConnection(connString);
                 //conn.Open();
 
-                queryStr = "INSERT INTO gamebook.event (eName, description, location, dateStart, dateEnd, public)" + "VALUES('" + txtEName.Text + "','" + txtDescription.Text + "','" + txtLocation.Text
-                    + "','" + txtDateStart.Text + "','" + txtDateEnd.Text + "','" + rdoPrivacy.SelectedIndex + "');";
+                lblEndDateInvalid.Visible = false;
+                lblNotAValidNumber.Visible = false;
+
+                queryStr = "INSERT INTO gamebook.event (eName, description, location, dateStart, dateEnd, startTime, endTime, numPeople public)" + "VALUES('" + txtEName.Text + "','" + txtDescription.Text + "','" + txtLocation.Text
+                    + "','" + txtDateStart.Text + "','" + txtDateEnd.Text + "','" + timeStart + "','" + timeEnd + "','" + numPeople + "','" + rdoPrivacy.SelectedIndex + "');";
 
                 lblTest.Text = queryStr;
 
                 //cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
                 //cmd.ExecuteReader();
                 //conn.Close();
-                
-            } else
-            {
-                lblTest.Text = "Begin date must be before end date";
             }
 
 
@@ -69,17 +241,34 @@ namespace AgileGameWebApp
 
         protected void btnDateStart_Click(object sender, EventArgs e)
         {
-            Calendar1.Visible = true;
+            if (Calendar1.Visible == true)
+            {
+                Calendar1.Visible = false;
+            } else
+            {
+                
+                Calendar1.Visible = true;
+            }
+            
         }
 
         protected void btnDateEnd_Click(object sender, EventArgs e)
         {
-            Calendar2.Visible = true;
+            if (Calendar2.Visible == true)
+            {
+                Calendar2.Visible = false;
+            }
+            else
+            {
+
+                Calendar2.Visible = true;
+            }
+            
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
-            txtDateStart.Text = Calendar1.SelectedDate.ToString("yyyy-MM-dd") ;
+            txtDateStart.Text = Calendar1.SelectedDate.ToString("yyyy-MM-dd");
             Calendar1.Visible = false;
         }
 
@@ -89,5 +278,7 @@ namespace AgileGameWebApp
             txtDateEnd.Text = Calendar2.SelectedDate.ToString("yyyy-MM-dd");
             Calendar2.Visible = false;
         }
+
+        
     }
 }
