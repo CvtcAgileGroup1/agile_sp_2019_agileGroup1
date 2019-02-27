@@ -30,7 +30,8 @@ CREATE TABLE `event` (
   `public` int(1) DEFAULT NULL,
   `startTime` time DEFAULT NULL,
   `endTime` time DEFAULT NULL,
-  `date` date DEFAULT NULL,
+  `startDate` date DEFAULT NULL,
+  `endDate` date DEFAULT NULL,
   `numPeople` int(3) DEFAULT NULL,
   PRIMARY KEY (`eventID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -42,7 +43,7 @@ CREATE TABLE `event` (
 
 LOCK TABLES `event` WRITE;
 /*!40000 ALTER TABLE `event` DISABLE KEYS */;
-INSERT INTO `event` VALUES (1,'Game Night','Game Night','Eau Claire',1,'00:00:00','00:00:00','2018-01-01',5);
+INSERT INTO `event` VALUES (1,'Game Night','Game Night','Eau Claire',1,'00:00:00','00:00:00','2018-01-01',NULL,5);
 /*!40000 ALTER TABLE `event` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -213,4 +214,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-02-26 13:01:29
+-- Dump completed on 2019-02-27 13:36:19
