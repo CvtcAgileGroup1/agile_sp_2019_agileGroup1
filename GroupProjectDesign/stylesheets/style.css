@@ -160,6 +160,21 @@ a{
     color: #e3e0cf;
 }
 
+a:hover, button:hover {
+
+    background-color:#1d8aae;
+
+}
+
+
+button > newUser {
+
+    background-color:#9fa8a3;
+    color:#e3e0cf;
+
+}
+
+
 #nav > ul > li{
     background-color: #9fa8a3; 
     padding: 0.525rem;
@@ -196,19 +211,22 @@ label {
 
 }
 
+textarea {
+
+    resize:none;
+}
+
 textarea > nameArea {
 
     position: relative;
-
-    border: 3px solid #000000
+    border: 3px solid #000000;
 
 }
 
 textarea > avatarInfo {
 
     position: relative;
-
-    border: 3px solid #000000
+    border: 3px solid #000000;
 
 }
 
@@ -216,15 +234,15 @@ textarea > emailInfo {
 
     position: relative;
 
-    border: 3px solid #000000
+    border: 3px solid #000000;
 
 }
 
 textarea > localInfo {
 
     position: relative;
+    border: 3px solid #000000;
 
-    border: 3px solid #000000
 
 }
 
@@ -232,6 +250,6 @@ textarea > bioInfo {
 
     position: relative;
     left: 10px;
-    border: 3px solid #000000
+    border: 3px solid #000000;
 
 }
