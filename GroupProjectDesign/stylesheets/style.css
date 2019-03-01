@@ -63,7 +63,24 @@ h4 {
 #profileCard {
     width: 100px;
     height: 100px;
+    position: relative;
+    left: -24px;
 }
+
+#profileCard > form > button {
+    width: 100px;
+    position: relative;
+    left: 74px;
+
+}
+
+content > label {
+
+    position: relative;
+    left: 24px;
+
+}
+
 
 h3 {
     text-align: center;
@@ -198,15 +215,18 @@ select > avatarInfo {
 }
 
 
-button > submitProfile {
+content > form > button {
 
-    position: center;
+    position: relative;
+    left: 63px;
+    width: 100px;
 
 }
 
-label {
+#label {
 
     font-size: 19px;
+    float: left;
     font-family: sans-serif;
 
 }
@@ -214,6 +234,7 @@ label {
 textarea {
 
     resize:none;
+
 }
 
 textarea > nameArea {
@@ -233,7 +254,6 @@ textarea > avatarInfo {
 textarea > emailInfo {
 
     position: relative;
-
     border: 3px solid #000000;
 
 }
@@ -242,7 +262,6 @@ textarea > localInfo {
 
     position: relative;
     border: 3px solid #000000;
-
 
 }
 
