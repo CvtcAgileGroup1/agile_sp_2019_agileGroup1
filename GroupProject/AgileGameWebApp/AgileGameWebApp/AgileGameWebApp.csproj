@@ -142,6 +142,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddEvent.aspx">
+      <BrowseToURL>~/AddEvent.aspx</BrowseToURL>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -176,9 +179,12 @@
     <Content Include="images\websiteMockup-2.jpg" />
     <Content Include="images\WHITEBACKGround2.jpg" />
     <Content Include="ProfileExample.aspx" />
+<<<<<<< HEAD
     <Content Include="AddEventExample.aspx" />
     <Content Include="GroupExample.aspx" />
     <Content Include="BrowseGames.aspx" />
+=======
+>>>>>>> WebDesign
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -217,6 +223,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEvent.aspx.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEvent.aspx.designer.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
@@ -259,6 +272,7 @@
     <Compile Include="ProfileExample.aspx.designer.cs">
       <DependentUpon>ProfileExample.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="AddEventExample.aspx.cs">
       <DependentUpon>AddEventExample.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -280,6 +294,8 @@
     <Compile Include="BrowseGames.aspx.designer.cs">
       <DependentUpon>BrowseGames.aspx</DependentUpon>
     </Compile>
+=======
+>>>>>>> WebDesign
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
