@@ -105,6 +105,8 @@ section p {
     padding-top: 40px;
     background-color: #e3e0cf;
     border-top: 10px solid #9fa8a3;
+    position: fixed;
+    bottom: 0px;
 }
 
 /* Navigation */

@@ -237,11 +237,18 @@ content > form > button {
 
 }
 
-#id > namelbl {
+#namelbl {
 
     position: relative;
-    left: 50px;
+    right: 23px;
 
+}
+
+#nameArea {
+    position: relative;
+    left: 30px;
+    top: 5px;
+    text-size-adjust:  45px;
 }
 
 #label {
