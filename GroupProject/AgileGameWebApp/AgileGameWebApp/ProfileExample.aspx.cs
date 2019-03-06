@@ -21,19 +21,19 @@ namespace AgileGameWebApp
 
         private void click_addEvent(object sender, EventArgs e) 
         {
-            addEvent()
+            addEvent();
         }
 
         private void addEvent() 
         {
-            String connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebappConnString"].toString();
+            //String connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebappConnString"].toString();
 
-            conn = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
-            conn.Open();
+            //conn = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
+            //conn.Open();
 
-            cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
-            cmd.ExecuteReader();
-            conn.Close();
+            //cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
+            //cmd.ExecuteReader();
+            //conn.Close();
 
         }
 

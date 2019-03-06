@@ -31,8 +31,8 @@ namespace AgileGameWebApp
 
                 newGame.gameID = (int)reader["gameID"];
                 newGame.gameName = (String)reader["gName"];
-                newGame.gameType = (String)reader["type"];
-                newGame.gameRating = Convert.ToDouble(reader["aveRating"]);
+                newGame.gameType = reader["type"] == DBNull.Value ? "" : (String)reader["type"];
+                newGame.gameRating = reader["aveRating"] == DBNull.Value ? 0.0 : Convert.ToDouble(reader["aveRating"]);
 
                 games.Add(newGame);
             }

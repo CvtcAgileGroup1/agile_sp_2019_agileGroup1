@@ -13,12 +13,30 @@ namespace AgileGameWebApp {
     public partial class WebForm1 {
         
         /// <summary>
-        /// gameNumber control.
+        /// gameInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl gameNumber;
+        protected global::System.Web.UI.WebControls.PlaceHolder gameInfo;
+        
+        /// <summary>
+        /// addToGames control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addToGames;
+        
+        /// <summary>
+        /// alreadyAdded control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder alreadyAdded;
     }
 }
