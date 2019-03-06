@@ -178,6 +178,7 @@
     <Content Include="images\Screen Shot 2019-02-17 at 3.16.19 PM.png" />
     <Content Include="images\websiteMockup-2.jpg" />
     <Content Include="images\WHITEBACKGround2.jpg" />
+    <Content Include="Profile.aspx" />
     <Content Include="ProfileExample.aspx" />
     <Content Include="AddEventExample.aspx" />
     <Content Include="GroupExample.aspx" />
@@ -247,6 +248,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="models\Game.cs" />
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
