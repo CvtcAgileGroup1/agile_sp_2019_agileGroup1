@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Games</title>
+    <title>Dashboard</title>
 
     <link rel="stylesheet" href="stylesheets/style.css">
 
@@ -47,7 +47,12 @@
             <div id="profileCard">
 
                 <img class="avatar" height="220px" src="images/Avatar5.jpg">
-                <button id="newProfile" type="button">New Profile</button>
+                <form id="buttonForm" action="NewProfile.html" method="get" target="_blank">
+
+                    <button id="newUser" type="submit">New User</button>
+
+                </form>
+                
                 
             </div>
 
@@ -55,6 +60,20 @@
 
                 <p>suuper</p>
                 
+                <label id="username">Username:</label>
+
+                <br>
+
+                <label id="contact">Contact</label>
+
+                <br>
+
+                <label id="local">Location:</label>
+
+
+                <br>
+
+                <label id="bio">Bio:</label>
 
             </content>
 
@@ -66,8 +85,6 @@
             <p>
                 &copy; GAMEBOOK 2019
             </p>
-
-
 
         </footer>
 

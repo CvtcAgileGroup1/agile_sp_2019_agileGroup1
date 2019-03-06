@@ -3,62 +3,13 @@
 <asp:Content ID="head" ContentPlaceHolderID="head" runat="server">
     <title>Events</title>
     
-    <link rel="stylesheet" href="content/style.css">
 </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-     <div id="wrapper">
-        
-        <header class="panel">
-            
-            <img class="imagelogo" height="100px" src="images/GAMEBOOk_image_logo.png">
-            <img class="textlogo" height="45px" src="images/GAMEBOOK_text_logo.png">
-
-        </header>
-        
-        <div class="panel" id="nav">
-            
-        <div id="profileNavCard">  
-            
-            <h3>HI, USER</h3>
-            
-        </div>
-            
-            <ul>
-                
-                <li><a href="ProfileExample.aspx">DASHBOARD</a></li>
-
-                <li><a href="AddEventExample.aspx">EVENTS</a></li>
-
-                <li><a href="GameExample.aspx">GAMES</a></li>
-
-                <li><a href="GroupExample.aspx">GROUP</a></li>
-                
-            </ul>
-            
-        </div>
-        
-        <main>
-            
- 
-            
-        </main>
-        
-        <wrapper>
-        
-            
-        
-        </wrapper>
-
-        <footer id="mainFooter" class="panel"> 
-            <p>
-                &copy GAMEBOOK 2019
-            </p>
-        
-        </footer>
-        
-    </div>
-
+    <section>
+        <asp:PlaceHolder ID="gameInfo" runat="server"></asp:PlaceHolder>
+        <asp:Button ID="addToGames" runat="server" Text="Add To Your Games" OnClick="addToGames_Click" />
+        <asp:PlaceHolder ID="alreadyAdded" runat="server"></asp:PlaceHolder>
+    </section>
 </asp:Content>

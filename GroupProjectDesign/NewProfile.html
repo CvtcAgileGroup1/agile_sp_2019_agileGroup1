@@ -48,7 +48,7 @@
 
                     <label for="nameArea">Input Username:</label>
                      <textarea id="nameArea" rows="1" cols="25">
-                         Username
+Username
                     </textarea>
                 
                     <lable for="avatarInfo">Choose Avatar:</lable>
@@ -61,23 +61,31 @@
                         <option value="images/Avatar6.jsp">Pink Logo</option>
                     </select>
                 
+                    <br>
                 
                     <label for="emailInfo">Input Email:</label>
                     <textarea id="emailInfo" rows="1" cols="25">
-                        Email
+Email
                      </textarea>
                 
                     <label for="localInfo">Input Location:</label>
+
+
                     <textarea id="localInfo" rows="1" cols="25">
-                        Location
+Location
                     </textarea>
 
                     <label for="bioInfo">Input Bio:</label>
                     <textarea id="bioInfo" rows="6" cols="30">
-                        Tell us about yourself
+Tell us about yourself
                     </textarea>
 
-                <button id="submitProfile" onclick="submitProfile()">Submit Profile</button>
+                <form action="index.html" method="get" target="index">
+
+                    <button id="submitProfile" type="submit" onclick="submitProfile()">Submit User</button>
+
+                </form>
+                
 
             </content>
 

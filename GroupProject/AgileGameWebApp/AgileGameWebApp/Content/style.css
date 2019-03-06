@@ -24,10 +24,6 @@ html {
 #wrapper {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .panel {
@@ -90,18 +86,17 @@ img.avatar {
     position: relative;
 }
 
-content {
-    position: absolute;
-    left: 23rem;
-    width: calc(100% - 32.6rem);
-    height: calc(100% - 5.5rem);
-    background-color: rgb(159, 168, 163, .4);
+section {
+    width: 80%;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: rgba(159, 168, 163, .4);
 }
 
-    content p {
-        margin-top: 1rem;
-        margin-left: 3rem;
-    }
+section p {
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
 
 #mainFooter {
     height: 1.5rem;
@@ -165,9 +160,7 @@ main {
     padding-left: 0.625rem;
 }
 
-#mainFooter {
-    position: center;
-}
+
 
 
 /* Input text boxes on events page need to be positioned*/
@@ -194,3 +187,28 @@ input#ContentPlaceHolder1_txtEndTime {
 input#ContentPlaceHolder1_txtLimit {
 
 }
+/*Browse Games List*/
+#gamesList {
+    width: 90%;
+    height: 100%;
+    margin: 5rem auto;
+    background-color: rgba(159, 168, 163, .4)
+}
+
+.gamesList {
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border: 3px solid red;
+    width: 20%;
+    height: 10rem;
+    vertical-align: top;
+    color: black;
+}
+
+a.sort {
+    color: black;
+}
+
