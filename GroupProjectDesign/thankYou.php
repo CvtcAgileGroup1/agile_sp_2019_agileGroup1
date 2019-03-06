@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>Games</title>
+  <title>Thank you</title>
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
@@ -37,10 +37,10 @@
     </div>
 
     <main>
-      <div>
+      <content>
         <h2>Thank You, <?= $name ?>.</h2>
         <p>We have recieved you comments and will get back to you soon.</p>
-      </div>
+      </content>
     </main>
 
     <footer id="mainFooter" class="panel">
