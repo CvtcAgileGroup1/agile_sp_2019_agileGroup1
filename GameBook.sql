@@ -100,6 +100,33 @@ INSERT INTO `group` VALUES (1,'DnDers of CV','We play DND yo!'),(2,'Tabletops 4u
 UNLOCK TABLES;
 
 --
+-- Table structure for table `location`
+--
+
+DROP TABLE IF EXISTS `location`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `location` (
+  `zipID` int(11) NOT NULL,
+  `zipCode` int(11) DEFAULT NULL,
+  `lat` double DEFAULT NULL,
+  `long` double DEFAULT NULL,
+  `xAxis` double DEFAULT NULL,
+  `yAxis` double DEFAULT NULL,
+  PRIMARY KEY (`zipID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `location`
+--
+
+LOCK TABLES `location` WRITE;
+/*!40000 ALTER TABLE `location` DISABLE KEYS */;
+/*!40000 ALTER TABLE `location` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `user`
 --
 
@@ -216,4 +243,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-02-27 14:11:31
+-- Dump completed on 2019-03-07 11:23:32
