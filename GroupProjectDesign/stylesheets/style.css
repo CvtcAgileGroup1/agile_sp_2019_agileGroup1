@@ -140,6 +140,7 @@ content p {
 }
 
 #mainFooter {
+    position: center;
     height: 1.5rem;
     margin-top: 1rem;
     text-align: center;
@@ -214,49 +215,25 @@ button > newUser {
 
 }
 
-main{
+main {
     height: 100%;
     margin-left: 9.375rem;
     padding-left: 0.625rem;
 }
 
-#mainFooter{
-    position: center;
-}
-
-#avatarInfo {
-    position: center;
-}
-
-
-content > form > button {
+#submitProfile {
 
     position: relative;
-    left: 63px;
+    left: 190px;
+    top: 8px;
     width: 100px;
 
 }
 
-#namelbl {
-
-    position: relative;
-    right: 23px;
-
-}
-
-#nameArea {
-    position: relative;
-    left: 30px;
-    top: 5px;
-    text-size-adjust:  45px;
-}
-
 #label {
-
     font-size: 19px;
     float: left;
     font-family: sans-serif;
-
 }
 
 textarea {
@@ -264,38 +241,74 @@ textarea {
     resize:none;
 
 }
-#nameArea {
 
+#namelbl {
     position: relative;
-    border: 3px solid #000000;
+    left: 65px;
+    top: 10px;
+}
 
+
+#nameArea {
+    position: relative;
+    left: 73px;
+    top: 16px;
+    text-size-adjust:  45px;
+    border: 3px solid #000000;
+}
+
+#avatarlbl {
+    position: relative;
+    left: 62px;
+    top: 20px
 }
 
 #avatarInfo {
 
     position: relative;
+    left: 82px;
+    top: 20px;
     border: 3px solid #000000;
+
+}
+
+#emaillbl {
+
+    position: relative;
+    left: 65px;
 
 }
 
 #emailInfo {
+    position: relative;
+    left: 107px;
+    top: 6px;
+    border: 3px solid #000000;
+}
+
+#locallbl {
 
     position: relative;
-    border: 3px solid #000000;
-
+    left: 64px;
 }
 
 #localInfo {
-
     position: relative;
+    left: 88px;
+    top: 6px; 
     border: 3px solid #000000;
+}
 
+#biolbl {
+    position: relative;
+    left: 63px;
+    top: -78px;
 }
 
 #bioInfo {
-
     position: relative;
-    left: 10px;
+    left: 124px;
+    top: 5px;
     border: 3px solid #000000
 }
 
