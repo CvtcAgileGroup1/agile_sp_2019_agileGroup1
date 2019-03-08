@@ -207,6 +207,25 @@ main {
     padding-left: 0.625rem;
 }
 
+#newUser {
+    position: relative;
+    top: -20px;
+    width: 100px;
+    background-color:#9fa8a3;
+    color: yellow;
+}
+
+a:hover, #newUser:hover {
+
+    background-color:#1d8aae;
+
+}
+
+#Grouplbl {
+    position: relative;
+    left: -7px;
+}
+
 #submitProfile {
 
     position: relative;
