@@ -9,7 +9,6 @@
     list-style: none;
 }
 
-
 /* Main CSS */
 html {
     width: 100%;
@@ -64,13 +63,6 @@ h2 {
     color: #e3e0cf;
 }
 
-#Grouplbl {
-    color: black;
-    position: relative;
-    left: 300px;
-    top: -45px;
-    float: left;
-}
 
 h4 {
     
@@ -117,7 +109,6 @@ img.imagelogo {
 
 
 img.avatar {
-    
   border-radius: 150px; 
   border: 10px solid #e3e0cf;
   margin-top: -30px;
@@ -221,10 +212,66 @@ a:hover, #newUser:hover {
 
 }
 
-#Grouplbl {
+#contactdlbl {
     position: relative;
-    left: -7px;
+    left: 45px;
+    top: 57px;
+    font-size: 24px;
 }
+
+#contactd {
+    position: relative;
+    left: 45px;
+    top: 57px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#localdlbl {
+    position: relative;
+    left: 45px;
+    top: 67px;
+    font-size: 24px;
+}
+
+#locald {
+    position: relative;
+    left: 45px;
+    top: 67px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#biodlbl {
+    position: relative;
+    left: 45px;
+    top: 76px;
+    font-size: 24px;
+}
+
+#biod {
+    position: relative;
+    left: 45px;
+    top: 76px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#Grouplbl {
+    color: black;
+    position: relative;
+    left: 300px;
+    top: -45px;
+    float: left;
+}
+
+#Groupd {
+    position: relative;
+    left: 200px;
+    top: 10px;
+    background-color: white;
+}
+
 
 #submitProfile {
 
