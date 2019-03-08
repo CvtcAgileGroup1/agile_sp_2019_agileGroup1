@@ -189,23 +189,9 @@ content p {
     left: 1rem;
 }
 
-a{
+a {
     color: #e3e0cf;
 }
-
-a:hover, button:hover {
-
-    background-color:#1d8aae;
-
-}
-
-button > newUser {
-
-    background-color:#9fa8a3;
-    color:#e3e0cf;
-
-}
-
 
 #nav > ul > li{
     background-color: #9fa8a3; 
@@ -227,6 +213,14 @@ main {
     left: 190px;
     top: 8px;
     width: 100px;
+    background-color:#9fa8a3;
+    color: yellow;
+
+}
+
+a:hover, #submitProfile:hover {
+
+    background-color:#1d8aae;
 
 }
 
@@ -237,9 +231,7 @@ main {
 }
 
 textarea {
-
     resize:none;
-
 }
 
 #namelbl {
@@ -247,7 +239,6 @@ textarea {
     left: 65px;
     top: 10px;
 }
-
 
 #nameArea {
     position: relative;
