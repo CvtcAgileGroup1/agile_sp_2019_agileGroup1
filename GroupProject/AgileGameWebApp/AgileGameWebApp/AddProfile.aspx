@@ -7,6 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <main>
+        <section>
         <asp:Label ID="lblName" runat="server" Text="Input Name"></asp:Label>
         <asp:TextBox ID="txtPName" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="rfvPName" runat="server" ControlToValidate="txtPName" ErrorMessage="Profile Name Required" ValidationGroup="vgReq"></asp:RequiredFieldValidator>
@@ -33,6 +34,19 @@
         <asp:TextBox ID="txtPBio" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="ProfileSubmit" runat="server" Text="Submit Profile" OnClick="click_addProfile" ValidationGroup="vgReq"/>
+        
+
+
+        <br>
+        <br>
+        <br>
+        <asp:Label ID="lblUserName" runat="server" Text="User Name:"></asp:Label>.
+        <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+        <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
+        <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+        <asp:Button ID="btnSignin" runat="server" Text="Sign In" OnClick="btnSignin_Click" />
+        <asp:Label ID="lblProfileNotFound" runat="server" Text=""></asp:Label>
+        </section>
 
     </main>
 

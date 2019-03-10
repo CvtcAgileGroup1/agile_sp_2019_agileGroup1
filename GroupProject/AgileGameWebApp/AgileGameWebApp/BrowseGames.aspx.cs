@@ -60,7 +60,7 @@ namespace AgileGameWebApp
 
             for (int i = 0; i < games.Count; i++)
             {
-                MyPlaceholder.Controls.Add(new Literal { Text="<a href='GameExample.aspx?gameID=" + games[i].gameID + "'><li class='gamesList'><p>" + games[i].gameName + "</p><p>" + games[i].gameType + "</p><p>" + games[i].gameRating  + "</p></li><a>" });
+                MyPlaceholder.Controls.Add(new Literal { Text="<a href='Game.aspx?gameID=" + games[i].gameID + "'><li class='gamesList'><p>" + games[i].gameName + "</p><p>" + games[i].gameType + "</p><p>" + games[i].gameRating  + "</p></li><a>" });
             }
 
             

@@ -58,8 +58,6 @@ namespace AgileGameWebApp
 
         protected void addToGames_Click(object sender, EventArgs e)
         {
-            //For testing
-            Session.Add("userID", 1);
 
             if(Session["userID"] != null)
             {
@@ -69,7 +67,7 @@ namespace AgileGameWebApp
             conn = connectionString();
             conn.Open();
 
-            queryStr = "SELECT * FROM gamebook.usergame WHERE userID = 1 and gameID = 1";
+            queryStr = "SELECT * FROM gamebook.usergame WHERE userID = " + userID + " AND gameID = " + gameID + ";";
 
             cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
 
@@ -80,6 +78,7 @@ namespace AgileGameWebApp
                 queryStr = "INSERT INTO gamebook.usergame (userID, gameID) VALUES (" + userID + ", " + gameID + ");";
                 cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
                 cmd.ExecuteReader();
+                alreadyAdded.Controls.Add(new Literal { Text = "<p>This game has been added.</p>" });
             }
             else
             {

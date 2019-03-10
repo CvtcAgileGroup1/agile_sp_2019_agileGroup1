@@ -13,6 +13,33 @@ namespace AgileGameWebApp {
     public partial class Profile {
         
         /// <summary>
+        /// avatar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage avatar;
+        
+        /// <summary>
+        /// FirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FirstName;
+        
+        /// <summary>
+        /// LastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LastName;
+        
+        /// <summary>
         /// userID control.
         /// </summary>
         /// <remarks>
@@ -31,30 +58,30 @@ namespace AgileGameWebApp {
         protected global::System.Web.UI.WebControls.Label Username;
         
         /// <summary>
-        /// First Name control.
+        /// contactd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label First Name;
+        protected global::System.Web.UI.WebControls.Label contactd;
         
         /// <summary>
-        /// Last Name control.
+        /// locald control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Last Name;
+        protected global::System.Web.UI.WebControls.Label locald;
         
         /// <summary>
-        /// Label2 control.
+        /// biod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label biod;
     }
 }
