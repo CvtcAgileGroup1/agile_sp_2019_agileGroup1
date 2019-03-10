@@ -47,15 +47,18 @@ namespace AgileGameWebApp
                 FirstName.Text = user.fName;
                 LastName.Text += user.lName;
                 contactd.Text = user.email;
-                locald.Text = user.city;
+                lblCity.Text = user.city;
                 biod.Text = user.bio;
                 avatar.Src = user.currentPic;
+                lblState.Text = user.state;
+                lblZip.Text = user.zip.ToString();
+                lblAge.Text = user.age.ToString();
 
 
 
             } else
             {
-                Response.Redirect("AddProfile.aspx");
+                Response.Redirect("AddUsers.aspx");
             }
             
 

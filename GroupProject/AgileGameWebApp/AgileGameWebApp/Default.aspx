@@ -22,8 +22,20 @@
 
                 <br>
 
-                <label id="localdlbl">City:</label><br>
-                <asp:Label ID="locald" runat="server" Text=""></asp:Label>
+                <label>Age:</label><br>
+                <asp:Label ID="lblAge" runat="server" Text=""></asp:Label>
+                <br>
+
+                <label>City:</label><br>
+                <asp:Label ID="lblCity" runat="server" Text=""></asp:Label>
+                <br>
+
+                <label>State:</label><br>
+                <asp:Label ID="lblState" runat="server" Text=""></asp:Label>
+                <br>
+
+                <label>Zip:</label><br>
+                <asp:Label ID="lblZip" runat="server" Text=""></asp:Label>
                 <br>
 
                 <label id="biodlbl">Bio:</label><br>

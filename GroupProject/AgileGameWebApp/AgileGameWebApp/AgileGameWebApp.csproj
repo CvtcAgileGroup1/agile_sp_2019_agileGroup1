@@ -144,7 +144,7 @@
   <ItemGroup>
     <Content Include="AddEvent.aspx" />
     <Content Include="AddGame.aspx" />
-    <Content Include="AddProfile.aspx" />
+    <Content Include="AddUsers.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -180,6 +180,7 @@
     <Content Include="images\WHITEBACKGround2.jpg" />
     <Content Include="Default.aspx" />
     <Content Include="BrowseGames.aspx" />
+    <Content Include="SignIn.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -233,12 +234,12 @@
     <Compile Include="AddGame.aspx.designer.cs">
       <DependentUpon>AddGame.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddProfile.aspx.cs">
-      <DependentUpon>AddProfile.aspx</DependentUpon>
+    <Compile Include="AddUsers.aspx.cs">
+      <DependentUpon>AddUsers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddProfile.aspx.designer.cs">
-      <DependentUpon>AddProfile.aspx</DependentUpon>
+    <Compile Include="AddUsers.aspx.designer.cs">
+      <DependentUpon>AddUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -289,6 +290,13 @@
     </Compile>
     <Compile Include="BrowseGames.aspx.designer.cs">
       <DependentUpon>BrowseGames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
