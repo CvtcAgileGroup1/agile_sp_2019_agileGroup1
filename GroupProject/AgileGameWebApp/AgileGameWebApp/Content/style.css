@@ -78,25 +78,28 @@ img.imagelogo {
 }
 
 
-img.avatar {
+#ContentPlaceHolder1_avatar {
+    width: 220px;
     border-radius: 150px;
     border: 10px solid #e3e0cf;
     margin-top: -30px;
     z-index: 3;
-    position: relative;
+    position: absolute;
+    left: 10rem;
 }
 
 section {
-    width: 80%;
+    width: 90%;
     min-height: 600px;
     margin: 0 auto;
     background-color: rgba(159, 168, 163, .4);
 }
 
-section p {
-    margin-top: 1rem;
-    margin-left: 3rem;
-}
+    section p, section h3, section input {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        text-align: left;
+    }
 
 #mainFooter {
     height: 1.5rem;
@@ -126,10 +129,8 @@ section p {
 }
 
 #profileNavCard {
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 10px;
+
+    padding: 10px 5px;
     position: absolute;
     top: 12rem;
     left: 1.6rem;
@@ -163,30 +164,6 @@ main {
 
 
 
-/* Input text boxes on events page need to be positioned*/
-input#ContentPlaceHolder1_txtTitle {
-
-}
-
-input#ContentPlaceHolder1_txtDesc {
-
-}
-
-input#ContentPlaceHolder1_txtLocation {
-
-}
-
-input#ContentPlaceHolder1_txtStartTime {
-
-}
-
-input#ContentPlaceHolder1_txtEndTime {
-
-}
-
-input#ContentPlaceHolder1_txtLimit {
-
-}
 /*Browse Games List*/
 #gamesList {
     width: 90%;
@@ -211,4 +188,3 @@ input#ContentPlaceHolder1_txtLimit {
 a.sort {
     color: black;
 }
-

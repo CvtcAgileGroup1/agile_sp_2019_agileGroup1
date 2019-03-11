@@ -9,7 +9,6 @@
     list-style: none;
 }
 
-
 /* Main CSS */
 html {
     width: 100%;
@@ -50,10 +49,20 @@ header > h1 {
     left: 2rem;
 }
 
+main > div > h1 {
+
+    position: relative;
+    left: 16rem;
+    top: -11rem;
+    font-size: 3rem;
+
+}
+
 h2 {
     
     color: #e3e0cf;
 }
+
 
 h4 {
     
@@ -87,8 +96,6 @@ h3 {
     margin-top: 10px;
 }
 
-
-
 img.textlogo {
     float: right;
     padding: 10px;
@@ -102,7 +109,6 @@ img.imagelogo {
 
 
 img.avatar {
-    
   border-radius: 150px; 
   border: 10px solid #e3e0cf;
   margin-top: -30px;
@@ -125,6 +131,7 @@ content p {
 }
 
 #mainFooter {
+    position: center;
     height: 1.5rem;
     margin-top: 1rem;
     text-align: center;
@@ -173,24 +180,9 @@ content p {
     left: 1rem;
 }
 
-a{
+a {
     color: #e3e0cf;
 }
-
-a:hover, button:hover {
-
-    background-color:#1d8aae;
-
-}
-
-
-button > newUser {
-
-    background-color:#9fa8a3;
-    color:#e3e0cf;
-
-}
-
 
 #nav > ul > li{
     background-color: #9fa8a3; 
@@ -200,75 +192,191 @@ button > newUser {
 
 }
 
-main{
+main {
     height: 100%;
     margin-left: 9.375rem;
     padding-left: 0.625rem;
 }
 
-#mainFooter{
-    position: center;
+#newUser {
+    position: relative;
+    top: -20px;
+    width: 100px;
+    background-color:#9fa8a3;
+    color: yellow;
 }
 
-select > avatarInfo {
-    position: center;
+a:hover, #newUser:hover {
+
+    background-color:#1d8aae;
+
+}
+
+#contactdlbl {
+    position: relative;
+    left: 45px;
+    top: 57px;
+    font-size: 24px;
+}
+
+#contactd {
+    position: relative;
+    left: 45px;
+    top: 57px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#localdlbl {
+    position: relative;
+    left: 45px;
+    top: 67px;
+    font-size: 24px;
+}
+
+#locald {
+    position: relative;
+    left: 45px;
+    top: 67px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#biodlbl {
+    position: relative;
+    left: 45px;
+    top: 76px;
+    font-size: 24px;
+}
+
+#biod {
+    position: relative;
+    left: 45px;
+    top: 76px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#Grouplbl {
+    color: black;
+    position: relative;
+    left: 300px;
+    top: -45px;
+    float: left;
+}
+
+#Groupd {
+    position: relative;
+    left: 200px;
+    top: 10px;
+    background-color: white;
 }
 
 
-content > form > button {
+#submitProfile {
 
     position: relative;
-    left: 63px;
+    left: 190px;
+    top: 8px;
     width: 100px;
+    background-color:#9fa8a3;
+    color: yellow;
+
+}
+
+a:hover, #submitProfile:hover {
+
+    background-color:#1d8aae;
 
 }
 
 #label {
-
     font-size: 19px;
     float: left;
     font-family: sans-serif;
-
 }
 
 textarea {
-
     resize:none;
-
 }
 
-textarea > nameArea {
+#namelbl {
+    position: relative;
+    left: 65px;
+    top: 10px;
+}
+
+#nameArea {
+    position: relative;
+    left: 73px;
+    top: 16px;
+    text-size-adjust:  45px;
+    border: 3px solid #000000;
+}
+
+#avatarlbl {
+    position: relative;
+    left: 62px;
+    top: 20px
+}
+
+#avatarInfo {
 
     position: relative;
+    left: 82px;
+    top: 20px;
     border: 3px solid #000000;
 
 }
 
-textarea > avatarInfo {
+#emaillbl {
 
     position: relative;
-    border: 3px solid #000000;
+    left: 65px;
 
 }
 
-textarea > emailInfo {
-
+#emailInfo {
     position: relative;
+    left: 107px;
+    top: 6px;
     border: 3px solid #000000;
-
 }
 
-textarea > localInfo {
+#locallbl {
 
     position: relative;
-    border: 3px solid #000000;
-
+    left: 64px;
 }
 
-textarea > bioInfo {
-
+#localInfo {
     position: relative;
-    left: 10px;
+    left: 88px;
+    top: 6px; 
     border: 3px solid #000000;
+}
 
+#biolbl {
+    position: relative;
+    left: 63px;
+    top: -78px;
+}
+
+#bioInfo {
+    position: relative;
+    left: 124px;
+    top: 5px;
+    border: 3px solid #000000
+}
+
+#formContactUs {
+    background-color: rgba(183, 226, 114, 0.267);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#formContactUs button {
+    background-color: rgba(253, 252, 179, 0.514);
+    height: 1.5625rem;
+    width: 3.125rem;
 }

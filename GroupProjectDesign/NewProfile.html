@@ -46,12 +46,13 @@
 
             <content>
 
-                    <label for="nameArea">Input Username:</label>
+                    <label id="namelbl" for="nameArea">Input Username:</label>
                      <textarea id="nameArea" rows="1" cols="25">
 Username
                     </textarea>
+                    <br>
                 
-                    <lable for="avatarInfo">Choose Avatar:</lable>
+                    <lable id="avatarlbl" for="avatarInfo">Choose Avatar:</lable>
                     <select id="avatarInfo">
                         <option value="images/Avatar1.jpg">Blue Logo</option>
                         <option value="images/Avatar2.jpg">Orange Logo</option>
@@ -61,26 +62,28 @@ Username
                         <option value="images/Avatar6.jsp">Pink Logo</option>
                     </select>
                 
-                    <br>
-                
-                    <label for="emailInfo">Input Email:</label>
+                    <br><br>
+                    
+                    <label id="emaillbl" for="emailInfo">Input Email:</label>
                     <textarea id="emailInfo" rows="1" cols="25">
 Email
                      </textarea>
                 
-                    <label for="localInfo">Input Location:</label>
+                     <br>
 
-
+                    <label id="locallbl" for="localInfo">Input Location:</label>
                     <textarea id="localInfo" rows="1" cols="25">
 Location
                     </textarea>
 
-                    <label for="bioInfo">Input Bio:</label>
+                    <br>
+
+                    <label id="biolbl" for="bioInfo">Input Bio:</label>
                     <textarea id="bioInfo" rows="6" cols="30">
 Tell us about yourself
                     </textarea>
 
-                <form action="index.html" method="get" target="index">
+                <form action="index.html">
 
                     <button id="submitProfile" type="submit" onclick="submitProfile()">Submit User</button>
 

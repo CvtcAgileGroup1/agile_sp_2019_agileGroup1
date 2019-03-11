@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameExample.aspx.cs" Inherits="AgileGameWebApp.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Game.aspx.cs" Inherits="AgileGameWebApp.WebForm1" %>
 
 <asp:Content ID="head" ContentPlaceHolderID="head" runat="server">
     <title>Events</title>
