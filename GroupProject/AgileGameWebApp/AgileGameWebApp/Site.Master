@@ -16,7 +16,7 @@
         <header class="panel">
             
             <img class="imagelogo" height="100px" src="images/GAMEBOOk_image_logo.png">
-            <img class="textlogo" height="45px" src="images/GAMEBOOK_text_logo.png">
+            <%--<img class="textlogo" height="45px" src="images/GAMEBOOK_text_logo.png">--%>
 
         </header>
         
@@ -32,11 +32,11 @@
                 
                <li><a href="ProfileExample.aspx">DASHBOARD</a></li>
 
-                <li><a href="AddEventExample.aspx">EVENTS</a></li>
+                <li><a href="Events.aspx">EVENTS</a></li>
 
                 <li><a href="BrowseGames.aspx">GAMES</a></li>
 
-                <li><a href="GroupExample.aspx">GROUP</a></li>
+                <%--<li><a href="GroupExample.aspx">GROUP</a></li>--%>
                 
             </ul>
             
