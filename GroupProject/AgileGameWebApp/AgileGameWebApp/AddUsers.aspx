@@ -49,16 +49,9 @@
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ForeColor="red" ControlToValidate="txtBio" ErrorMessage="Bio Required"></asp:RequiredFieldValidator><br>
                 <asp:TextBox CssClass="databox" ID="txtBio" runat="server"></asp:TextBox><br>
             
-                <asp:Button ID="Button1" runat="server" Text="Submit Event" OnClick="click_addUser" />
+                <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="click_addUser" />
             </section>
         </main>
-
-        <footer id="mainFooter" class="panel"> 
-            <p>
-                &copy GAMEBOOK 2019
-            </p>
-  
-        </footer>
-        
+   
     </div>
 </asp:Content>

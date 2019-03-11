@@ -47,14 +47,6 @@
         </main>
 
 
-
-        <footer id="mainFooter" class="panel">
-            <p>
-                &copy; GAMEBOOK 2019
-            </p>
-
-        </footer>
-
     </div>
 
 </asp:Content>

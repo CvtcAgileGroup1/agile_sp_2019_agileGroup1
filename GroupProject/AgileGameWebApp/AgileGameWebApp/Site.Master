@@ -16,7 +16,6 @@
         <header class="panel">
             
             <img class="imagelogo" height="100px" src="images/GAMEBOOk_image_logo.png">
-            <%--<img class="textlogo" height="45px" src="images/GAMEBOOK_text_logo.png">--%>
 
         </header>
         
