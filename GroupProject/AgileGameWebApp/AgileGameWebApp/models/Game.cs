@@ -21,6 +21,11 @@ namespace AgileGameWebApp.models
             this.gameRating = gameRating;
         }
 
+        public Game(String gameName)
+        {
+            this.gameName = gameName;
+        }
+
         public Game()
         {
 

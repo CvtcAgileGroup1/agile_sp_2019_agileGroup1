@@ -43,6 +43,17 @@
 
             </section>
 
+            <section>
+                 <form action="GameExample.aspx" method="post">
+                     <a href='?sort=Name' class="sort">Favorited Games</a>
+                     <%--<a href='?sort=Type' class="sort">Type</a>
+                     <a href='?sort=Rating' class="sort">Rating</a>--%>
+                     <ul id="gamesList">
+                     <asp:PlaceHolder ID="MyPlaceholder" runat="server"></asp:PlaceHolder>
+                     </ul>
+                </form>
+            </section>
+
 
         </main>
 

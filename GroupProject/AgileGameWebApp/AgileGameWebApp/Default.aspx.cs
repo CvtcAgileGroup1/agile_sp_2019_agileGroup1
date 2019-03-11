@@ -1,6 +1,7 @@
 ﻿using AgileGameWebApp.models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,8 +13,12 @@ namespace AgileGameWebApp
     {
         MySql.Data.MySqlClient.MySqlConnection conn;
         MySql.Data.MySqlClient.MySqlCommand cmd;
+        MySql.Data.MySqlClient.MySqlCommand ret;
         UserClass user = new UserClass();
         String querystring = "";
+        String retrieveGamesQueryString = "";
+        List<Game> games = new List<Game>();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -23,7 +28,6 @@ namespace AgileGameWebApp
                 conn = connectionString();
                 conn.Open();
                 querystring = String.Format("SELECT userID, uName,fName,lName,email,age,city,state,zip,bio, curAvatar FROM user WHERE user.userID = " + Session["userID"] + ";");
-
                 cmd = new MySql.Data.MySqlClient.MySqlCommand(querystring, conn);
 
                 MySql.Data.MySqlClient.MySqlDataReader reader = cmd.ExecuteReader();
@@ -42,6 +46,31 @@ namespace AgileGameWebApp
                     user.currentPic = reader["curAvatar"] == DBNull.Value ? "images/Avatar1.jpg" : (string)reader["curAvatar"];
 
                 }
+                reader.Close();
+                conn.Close();
+
+                conn = connectionString();
+                conn.Open();
+                retrieveGamesQueryString = String.Format("SELECT gname FROM game, usergame WHERE usergame.gameID = game.gameID and usergame.userID = " + Session["userID"] + ";");
+                ret = new MySql.Data.MySqlClient.MySqlCommand(retrieveGamesQueryString, conn);
+                MySql.Data.MySqlClient.MySqlDataReader gameReader = ret.ExecuteReader();
+                
+                while (gameReader.Read())
+                {
+                    Game game = new Game();
+                    game.gameName = (String)gameReader["gname"];
+                    games.Add(game);
+
+                }
+                gameReader.Close();
+                conn.Close();
+
+                for (int i = 0; i < games.Count; i++)
+                {
+                    MyPlaceholder.Controls.Add(new Literal { Text = "<li class='gamesList'><p>" + games[i].gameName + "</p>" });
+                }
+
+
                 userID.Text = user.userID.ToString();
                 Username.Text = user.uName;
                 FirstName.Text = user.fName;
