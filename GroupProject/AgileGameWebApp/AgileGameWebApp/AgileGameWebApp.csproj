@@ -180,6 +180,7 @@
     <Content Include="images\WHITEBACKGround2.jpg" />
     <Content Include="Default.aspx" />
     <Content Include="BrowseGames.aspx" />
+    <Content Include="MainProfile.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="thankYou.php" />
     <Content Include="ContactUs.aspx" />
@@ -247,6 +248,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MainProfile.aspx.cs">
+      <DependentUpon>MainProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainProfile.aspx.designer.cs">
+      <DependentUpon>MainProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="models\Game.cs" />
     <Compile Include="models\UserClass.cs" />

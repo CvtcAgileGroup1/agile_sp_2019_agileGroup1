@@ -290,6 +290,16 @@ a:hover, .btnSignIn:hover {
     top: -53px;
 }
 
+.avatar {
+    border-radius: 150px;
+    border: 10px solid #e3e0cf;
+    margin-top: -30px;
+    z-index: 3;
+    position: relative;
+    left: -12rem;
+    top: -2rem;
+}
+
 .submitProfile {
     position: relative;
     bottom: 1rem;
@@ -315,6 +325,19 @@ a:hover, .btnSignIn:hover {
     position: relative;
     left: 60px;
     top: 10px;
+}
+
+#nameArea {
+    position: relative;
+    left: 4rem;
+    top: -13rem;
+    font-size: 4rem;
+}
+
+.Grouplbl {
+    position: relative;
+    left: 4rem;
+
 }
 
 
