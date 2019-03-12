@@ -55,12 +55,19 @@ h4 {
     height: 100px;
 }
 
+.inSign {
+    position: relative;
+    left: 24px;
+    top: 10px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #9fa8a3;
+}
+
 h3 {
     text-align: center;
     margin-top: 10px;
 }
-
-
 
 img.textlogo {
     float: right;
@@ -188,6 +195,9 @@ a:hover, .submitProfile:hover {
     background-color: #1d8aae;
 }
 
+a:hover, .btnSignIn:hover {
+    background-color: #1d8aae;
+}
 
 #txtUsername {
     position: relative;
@@ -200,8 +210,15 @@ a:hover, .submitProfile:hover {
     left: 15rem;
     width: 60px;
     height: 40px;
-
     text-align:center;
+    background-color: #9fa8a3;
+    color: yellow;
+}
+
+.btnSignIn {
+    width: 60px;
+    height: 40px;
+    text-align: center;
     background-color: #9fa8a3;
     color: yellow;
 }
