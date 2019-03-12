@@ -34,6 +34,7 @@
                 <li><a href="AddEvent.aspx">EVENTS</a></li>
 
                 <li><a href="BrowseGames.aspx">GAMES</a></li>
+                <li><a href="ContactUs.aspx">CONTACT US</a></li>
                 
             </ul>
             

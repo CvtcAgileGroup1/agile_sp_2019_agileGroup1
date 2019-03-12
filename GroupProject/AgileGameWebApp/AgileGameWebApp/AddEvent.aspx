@@ -5,6 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <main>
+        <section>
         <asp:Label ID="lblEventName" runat="server" Text="Event Name"></asp:Label>
         <asp:TextBox ID="txtEName" runat="server" MaxLength="45"></asp:TextBox>
         <asp:RequiredFieldValidator ID="rfvEName" runat="server" ControlToValidate="txtEName" ErrorMessage="Event Name Required" ValidationGroup="vgReq"></asp:RequiredFieldValidator>
@@ -110,6 +111,6 @@
 
         <br /><br />
         <asp:Label ID="lblTest" runat="server" Text="Test Text"></asp:Label>
-
+        </section>
     </main>
 </asp:Content>
