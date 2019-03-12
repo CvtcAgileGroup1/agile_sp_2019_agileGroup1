@@ -64,6 +64,11 @@ h4 {
     color: #9fa8a3;
 }
 
+.userTxtB {
+    position: relative;
+    left: 23px;
+}
+
 h3 {
     text-align: center;
     margin-top: 10px;
@@ -164,7 +169,17 @@ main {
     padding-left: 0.625rem;
 }
 
+.txtPassword {
+    position: relative;
+    left: 110px;
+    top: -49px;
+}
 
+.txtUsername {
+    position: relative;
+    left: 110px;
+    top: -35px;
+}
 
 /*Browse Games List*/
 #gamesList {
@@ -204,11 +219,82 @@ a:hover, .btnSignIn:hover {
     left: 21rem;
 }
 
+.valTxt {
+    position: relative;
+    left: 50px;
+}
+
+.databoxUN {
+    position: relative;
+    left: 110px;
+    top: -53px;
+}
+
+.databoxEmail {
+    position: relative;
+    left: 65px;
+    top: -53px;
+}
+
+.databoxPass {
+    position: relative;
+    left: 105px;
+    top: -53px;
+}
+
+.databoxCPass {
+    position: relative;
+    left: 180px;
+    top: -53px;
+}
+
+.databoxFN {
+    position: relative;
+    left: 115px;
+    top: -53px;
+}
+
+.databoxLN {
+    position: relative;
+    left: 115px;
+    top: -53px;
+}
+
+.databoxA {
+    position: relative;
+    left: 55px;
+    top: -53px;
+}
+
+.databoxC {
+    position: relative;
+    left: 55px;
+    top: -53px;
+}
+
+.databoxS {
+    position: relative;
+    left: 65px;
+    top: -53px;
+}
+
+.databoxZip {
+    position: relative;
+    left: 45px;
+    top: -53px;
+}
+
+.databoxBio {
+    position: relative;
+    left: 45px;
+    top: -53px;
+}
+
 .submitProfile {
     position: relative;
     bottom: 1rem;
-    left: 15rem;
-    width: 60px;
+    left: 140px;
+    width: 160px;
     height: 40px;
     text-align:center;
     background-color: #9fa8a3;
@@ -216,11 +302,19 @@ a:hover, .btnSignIn:hover {
 }
 
 .btnSignIn {
+    position: relative;
+    left: -70px;
     width: 60px;
     height: 40px;
     text-align: center;
     background-color: #9fa8a3;
     color: yellow;
+}
+
+.lblNotFound {
+    position: relative;
+    left: 60px;
+    top: 10px;
 }
 
 

@@ -5,12 +5,12 @@
     <main>
         <section>
             <asp:Label ID="inSign" runat="server" CssClass="inSign">Sign In</asp:Label>
-            <h3>User Name</h3>
-            <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
-            <h3>Password</h3>
-            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-            <asp:Button ID="btnSignIn" runat="server" CssClass="btnSignIn" Text="Sign In" OnClick="btnSignIn_Click" />
-            <asp:Label ID="lblNotFound" runat="server" Text=""></asp:Label>
+            <h3>Username:</h3>
+            <asp:TextBox ID="txtUsername" runat="server" CssClass="txtUsername"></asp:TextBox>
+            <h3>Password:</h3>
+            <asp:TextBox ID="txtPassword" runat="server" CssClass="txtPassword"></asp:TextBox>
+            <asp:Button ID="btnSignIn" runat="server" CssClass="btnSignIn" Text="Sign In" OnClick="btnSignIn_Click" /><br />
+            <asp:Label ID="lblNotFound" runat="server" CssClass="lblNotFound" Text=""></asp:Label>
         </section>
     </main>
 </asp:Content>
