@@ -214,6 +214,11 @@ a:hover, .btnSignIn:hover {
     background-color: #1d8aae;
 }
 
+a:hover, .addUser:hover {
+    background-color: #1d8aae;
+}
+
+
 #txtUsername {
     position: relative;
     left: 21rem;
@@ -311,6 +316,17 @@ a:hover, .btnSignIn:hover {
     color: yellow;
 }
 
+.addUser {
+    position: relative;
+    left: -6.5rem;
+    top: -6.5rem;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    background-color: #9fa8a3;
+    color: yellow;
+}
+
 .btnSignIn {
     position: relative;
     left: -70px;
@@ -334,10 +350,69 @@ a:hover, .btnSignIn:hover {
     font-size: 4rem;
 }
 
-.Grouplbl {
+.userlbl {
     position: relative;
-    left: 4rem;
+    left: 50px;
+    font-size: 34px;
+}
 
+.userFN {
+    position: relative;
+    left: 50px;
+    font-size: 24px;
+}
+
+.userLN {
+    position: relative;
+    left: 50px;
+    font-size: 24px;
+}
+
+.contactdlbl {
+    position: relative;
+    left: 50px;
+    font-size: 34px;
+}
+
+.contactVal {
+    position: relative;
+    left: 50px;
+    font-size: 24px;
+}
+
+.localdlbl {
+    position: relative;
+    left: 50px;
+    font-size: 34px;
+}
+
+.locald {
+    position: relative;
+    left: 50px;
+    font-size: 24px;
+}
+
+.biodlbl {
+    position: relative;
+    left: 50px;
+    font-size: 34px;
+}
+
+.bioVal {
+    position: relative;
+    left: 50px;
+    font-size: 24px;
+}
+
+.grouplbl {
+    position: relative;
+    left: 9rem;
+    font-size: 30px;
+}
+
+.groupCollect {
+    position: relative;
+    left: 15rem;
 }
 
 

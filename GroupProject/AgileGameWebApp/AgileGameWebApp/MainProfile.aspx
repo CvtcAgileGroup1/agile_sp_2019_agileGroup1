@@ -19,30 +19,33 @@
             </div>
     
             <content>
-                
                 <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                <asp:Label ID="Username1" runat="server" Text="Label"></asp:Label>
-                <asp:Label ID="FirstName" runat="server" Text="Label"></asp:Label>
-                
                 <br />
+                <label class="userlbl">Username:</label>
+                <asp:Label ID="Username1" runat="server" CssClass="userFN" Text="Label"></asp:Label>
+                <asp:Label ID="FirstName" runat="server" CssClass="userLN" Text="Label"></asp:Label>
+                <br /><br />
 
-                <label id="contactdlbl">Contact:</label>
-                <asp:Label ID="contactval" runat="server" Text="Label"></asp:Label>
+                <label class="contactdlbl">Contact:</label>
+                <asp:Label ID="contactval" runat="server" CssClass="contactVal"  Text="Label"></asp:Label>
 
-                <br>
+                <br /><br />
 
-                <label id="localdlbl">Location:</label>
-                <label id="locald" value="value">Ltest</label>
+                <label class="localdlbl">Location:</label>
+                <label class="locald" value="value">Ltest</label>
 
-                <br>
+                <br /><br />
 
-                <label id="biodlbl">Bio:</label>
-                <asp:Label ID="bioval" runat="server" Text="Label"></asp:Label>
+                <label class="biodlbl">Bio:</label>
+                <asp:Label ID="bioval" runat="server" CssClass="bioVal" Text="Label"></asp:Label>
 
                 <br /> <br /><br /><br />
 
-                <h2 id="Grouplbl">Group Activity</h2>
-                <label input type="checkbox" id="Groupd" CssClass="groupCollect">Gtest</label>
+                <h2 class="grouplbl">Group Activity</h2>
+                <br />
+                <label id="Groupd" class="groupCollect">Gtest</label>
+
+                <br />
 
             </content>
 
