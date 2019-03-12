@@ -46,10 +46,6 @@ header {
         left: 2rem;
     }
 
-h2 {
-    color: #e3e0cf;
-}
-
 h4 {
     color: black;
 }
@@ -163,7 +159,6 @@ main {
 
 
 
-
 /*Browse Games List*/
 #gamesList {
     width: 90%;
@@ -188,3 +183,28 @@ main {
 a.sort {
     color: black;
 }
+
+a:hover, .submitProfile:hover {
+    background-color: #1d8aae;
+}
+
+
+#txtUsername {
+    position: relative;
+    left: 21rem;
+}
+
+.submitProfile {
+    position: relative;
+    bottom: 1rem;
+    left: 15rem;
+    width: 60px;
+    height: 40px;
+
+    text-align:center;
+    background-color: #9fa8a3;
+    color: yellow;
+}
+
+
+

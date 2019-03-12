@@ -49,7 +49,7 @@
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ForeColor="red" ControlToValidate="txtBio" ErrorMessage="Bio Required"></asp:RequiredFieldValidator><br>
                 <asp:TextBox CssClass="databox" ID="txtBio" runat="server"></asp:TextBox><br>
             
-                <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="click_addUser" />
+                <asp:Button ID="submitProfile" runat="server" CssClass="submitProfile" Text="Submit" OnClick="click_addUser" />
             </section>
         </main>
    
