@@ -9,8 +9,8 @@ namespace AgileGameWebApp
 {
     public partial class AddEvent : System.Web.UI.Page
     {
-        //mysql.data.mysqlclient.mysqlconnection conn;
-        //mysql.data.mysqlclient.mysqlcommand cmd;
+        MySql.Data.MySqlClient.MySqlConnection conn;
+        MySql.Data.MySqlClient.MySqlCommand cmd;
         String queryStr;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -221,24 +221,28 @@ namespace AgileGameWebApp
             }
             else
             {
-                //String connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
+                String connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
 
-                //conn = new MySql.Data.MySqlClient.MySqlConnection(connString);
-                //conn.Open();
+                conn = new MySql.Data.MySqlClient.MySqlConnection(connString);
+                conn.Open();
 
                 lblEndDateInvalid.Visible = false;
                 lblNotAValidNumber.Visible = false;
 
-                queryStr = "INSERT INTO gamebook.event (eName, description, location, dateStart, dateEnd, startTime, endTime, numPeople public)" + "VALUES('" + txtEName.Text + "','" + txtDescription.Text + "','" + txtLocation.Text
+                
+                queryStr = "INSERT INTO gamebook.event (eName, description, location, startDate, endDate, startTime, endTime, numPeople, public)" + "VALUES('" + txtEName.Text + "','" + txtDescription.Text + "','" + txtLocation.Text
                     + "','" + txtDateStart.Text + "','" + txtDateEnd.Text + "','" + timeStart + "','" + timeEnd + "','" + numPeople + "','" + rdoPrivacy.SelectedIndex + "');";
 
-                lblTest.Text = queryStr;
+                lblTest.Text = "Submited";
 
-                //cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
-                //cmd.ExecuteReader();
-                //conn.Close();
+                cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
+                cmd.ExecuteReader();
+                cmd.Dispose();
+                conn.Close();
+
+                Button1.Visible = false;
             }
-
+            
 
         }
 

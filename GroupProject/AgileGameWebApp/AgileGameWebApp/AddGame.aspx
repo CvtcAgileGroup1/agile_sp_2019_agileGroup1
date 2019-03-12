@@ -13,5 +13,5 @@
     <asp:TextBox ID="txtDescription" runat="server" Columns="50" Rows="5" TextMode="MultiLine" MaxLength="255"></asp:TextBox>
     <br /><br /> 
     <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
-    <asp:Label ID="lblTest" runat="server" Text="Testing Label"></asp:Label>
+    <asp:Label ID="lblTest" runat="server" Text=""></asp:Label>
 </asp:Content>
