@@ -9,8 +9,8 @@ namespace AgileGameWebApp
 {
     public partial class AddGame : System.Web.UI.Page
     {
-        //mysql.data.mysqlclient.mysqlconnection conn;
-        //mysql.data.mysqlclient.mysqlcommand cmd;
+        MySql.Data.MySqlClient.MySqlConnection conn;
+        MySql.Data.MySqlClient.MySqlCommand cmd;
         String queryStr;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -33,20 +33,22 @@ namespace AgileGameWebApp
             gameType = txtGameType.Text;
             gameDesc = txtDescription.Text;
 
-            //String connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
+            String connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
 
-            //conn = new MySql.Data.MySqlClient.MySqlConnection(connString);
-            //conn.Open();
+            conn = new MySql.Data.MySqlClient.MySqlConnection(connString);
+            conn.Open();
 
        
 
             queryStr = "INSERT INTO gamebook.game (gName, type, description)" + "VALUES('" + gameName + "','" + gameType + "','" + gameDesc + "');";
 
-            lblTest.Text = queryStr;
+            lblTest.Text = "Submitted";
 
-            //cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
-            //cmd.ExecuteReader();
-            //conn.Close();
+            cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, conn);
+            cmd.ExecuteReader();
+            cmd.Dispose();
+            conn.Close();
+            Response.Redirect("BrowseGames.aspx");
 
         }
     }
