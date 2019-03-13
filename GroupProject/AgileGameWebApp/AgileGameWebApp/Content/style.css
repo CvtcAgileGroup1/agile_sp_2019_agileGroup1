@@ -182,12 +182,7 @@ main {
 }
 
 /*Browse Games List*/
-#gamesList {
-    width: 90%;
-    height: 100%;
-    margin: 5rem auto;
-    background-color: rgba(159, 168, 163, .4)
-}
+
 
 .gamesList {
     display: inline-block;
@@ -197,7 +192,7 @@ main {
     text-align: center;
     border: 3px solid red;
     width: 20%;
-    height: 10rem;
+    height: 15rem;
     vertical-align: top;
     color: black;
 }

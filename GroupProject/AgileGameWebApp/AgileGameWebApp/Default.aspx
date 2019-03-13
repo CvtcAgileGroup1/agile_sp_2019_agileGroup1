@@ -1,17 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AgileGameWebApp.Profile" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-       <div id="wrapper">
+    <div id="wrapper">
 
         <main>
 
             <div id="profileCard">
 
                 <img src="~/images/Avatar1.jpg" id="avatar" runat="server">
-
             </div>
-    
+
             <section>
                 <asp:Label ID="FirstName" runat="server" Text=""></asp:Label>
                 <asp:Label ID="LastName" runat="server" Text=" "></asp:Label><br>
@@ -44,14 +44,25 @@
             </section>
 
             <section>
-                 <form action="GameExample.aspx" method="post">
-                     <a href='?sort=Name' class="sort">Favorited Games</a>
-                     <%--<a href='?sort=Type' class="sort">Type</a>
+
+                <h3>Your Games</h3>
+                <%--<a href='?sort=Type' class="sort">Type</a>
                      <a href='?sort=Rating' class="sort">Rating</a>--%>
-                     <ul id="gamesList">
-                     <asp:PlaceHolder ID="MyPlaceholder" runat="server"></asp:PlaceHolder>
-                     </ul>
-                </form>
+                <ul id="gamesList">
+                    <asp:PlaceHolder ID="gamesPlaceholder" runat="server"></asp:PlaceHolder>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h3>Your Events</h3>
+                <%--<a href='?sort=Type' class="sort">Type</a>
+                     <a href='?sort=Rating' class="sort">Rating</a>--%>
+                <ul>
+                    <asp:PlaceHolder ID="eventsPlaceholder" runat="server"></asp:PlaceHolder>
+                </ul>
+
             </section>
 
 

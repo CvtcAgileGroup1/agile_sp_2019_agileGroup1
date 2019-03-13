@@ -184,6 +184,8 @@
     <Content Include="SignIn.aspx" />
     <Content Include="thankYou.php" />
     <Content Include="ContactUs.aspx" />
+    <Content Include="Events.aspx" />
+    <Content Include="SingleEvent.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -256,6 +258,7 @@
     <Compile Include="MainProfile.aspx.designer.cs">
       <DependentUpon>MainProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="models\Event.cs" />
     <Compile Include="models\Game.cs" />
     <Compile Include="models\UserClass.cs" />
     <Compile Include="Default.aspx.cs">
@@ -314,6 +317,20 @@
     </Compile>
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SingleEvent.aspx.cs">
+      <DependentUpon>SingleEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SingleEvent.aspx.designer.cs">
+      <DependentUpon>SingleEvent.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -112,12 +112,21 @@ namespace AgileGameWebApp {
         protected global::System.Web.UI.WebControls.Label biod;
         
         /// <summary>
-        /// MyPlaceholder control.
+        /// gamesPlaceholder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder MyPlaceholder;
+        protected global::System.Web.UI.WebControls.PlaceHolder gamesPlaceholder;
+        
+        /// <summary>
+        /// eventsPlaceholder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder eventsPlaceholder;
     }
 }

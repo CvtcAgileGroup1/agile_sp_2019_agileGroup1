@@ -3,12 +3,13 @@
     <title>Browse Games</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form action="GameExample.aspx" method="post">
+    <section>
         <a href='?sort=Name' class="sort">Name</a>
         <a href='?sort=Type' class="sort">Type</a>
         <a href='?sort=Rating' class="sort">Rating</a>
         <ul id="gamesList">
         <asp:PlaceHolder ID="MyPlaceholder" runat="server"></asp:PlaceHolder>
         </ul>
-    </form>
+        </section>
+
 </asp:Content>

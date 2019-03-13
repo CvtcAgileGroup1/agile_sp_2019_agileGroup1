@@ -17,7 +17,9 @@ namespace AgileGameWebApp
         UserClass user = new UserClass();
         String querystring = "";
         String retrieveGamesQueryString = "";
+        String eventsQueryString = "";
         List<Game> games = new List<Game>();
+        List<Event> events = new List<Event>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -47,10 +49,7 @@ namespace AgileGameWebApp
 
                 }
                 reader.Close();
-                conn.Close();
 
-                conn = connectionString();
-                conn.Open();
                 retrieveGamesQueryString = String.Format("SELECT gname FROM game, usergame WHERE usergame.gameID = game.gameID and usergame.userID = " + Session["userID"] + ";");
                 ret = new MySql.Data.MySqlClient.MySqlCommand(retrieveGamesQueryString, conn);
                 MySql.Data.MySqlClient.MySqlDataReader gameReader = ret.ExecuteReader();
@@ -58,8 +57,22 @@ namespace AgileGameWebApp
                 while (gameReader.Read())
                 {
                     Game game = new Game();
-                    game.gameName = (String)gameReader["gname"];
+                    game.gameName = (String)gameReader["gName"];
                     games.Add(game);
+
+                }
+                gameReader.Close();
+               
+
+                eventsQueryString = String.Format("SELECT eName FROM event, userevent WHERE userevent.eventID = event.eventID and userevent.userID = " + Session["userID"] + ";");
+                ret = new MySql.Data.MySqlClient.MySqlCommand(eventsQueryString, conn);
+                MySql.Data.MySqlClient.MySqlDataReader eventReader = ret.ExecuteReader();
+
+                while (eventReader.Read())
+                {
+                    Event newEvent = new Event();
+                    newEvent.eName = (String)eventReader["eName"];
+                    events.Add(newEvent);
 
                 }
                 gameReader.Close();
@@ -67,7 +80,12 @@ namespace AgileGameWebApp
 
                 for (int i = 0; i < games.Count; i++)
                 {
-                    MyPlaceholder.Controls.Add(new Literal { Text = "<li class='gamesList'><p>" + games[i].gameName + "</p>" });
+                    gamesPlaceholder.Controls.Add(new Literal { Text = "<li class='gamesList'><p>" + games[i].gameName + "</p></li>" });
+                }
+
+                for (int i = 0; i < events.Count; i++)
+                {
+                    eventsPlaceholder.Controls.Add(new Literal { Text = "<li class='gamesList'><p>" + events[i].eName + "</p></li>" });
                 }
 
 
