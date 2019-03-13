@@ -239,8 +239,9 @@ namespace AgileGameWebApp
                 cmd.ExecuteReader();
                 cmd.Dispose();
                 conn.Close();
-
+                
                 Button1.Visible = false;
+                Response.Redirect("Events.aspx");
             }
             
 

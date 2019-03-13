@@ -48,6 +48,7 @@ namespace AgileGameWebApp
             cmd.ExecuteReader();
             cmd.Dispose();
             conn.Close();
+            btnSubmit.Visible = false;
             Response.Redirect("BrowseGames.aspx");
 
         }

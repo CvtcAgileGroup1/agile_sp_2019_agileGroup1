@@ -32,7 +32,7 @@ CREATE TABLE `event` (
   `endTime` time DEFAULT NULL,
   `startDate` date DEFAULT NULL,
   `endDate` date DEFAULT NULL,
-  `numPeople` int(3) DEFAULT NULL,
+  `numPeople` int(5) DEFAULT NULL,
   PRIMARY KEY (`eventID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;

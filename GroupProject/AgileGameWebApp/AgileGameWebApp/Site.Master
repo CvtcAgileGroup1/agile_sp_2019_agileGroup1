@@ -30,9 +30,9 @@
             <ul>
                 
                <li><a href="Default.aspx">DASHBOARD</a></li>
-               <li><a href="Events.aspx">Events</a></li>
-                <li><a href="AddEvent.aspx">ADD EVENT</a></li>
+               <li><a href="Events.aspx">EVENTS</a></li>
                 <li><a href="BrowseGames.aspx">GAMES</a></li>
+                <li><a href="AddEvent.aspx">ADD EVENT</a></li>
                 <li><a href="AddGame.aspx">ADD GAME</a></li>                
                 <li><a href="ContactUs.aspx">CONTACT US</a></li>
                 
