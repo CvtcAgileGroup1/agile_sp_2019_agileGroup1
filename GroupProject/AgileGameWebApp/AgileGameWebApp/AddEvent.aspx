@@ -102,7 +102,7 @@
     </asp:RadioButtonList>
     <br /><br />
     <asp:Label ID="lblNumberOfPeople" runat="server" Text="Number of People"></asp:Label>
-    <asp:TextBox ID="txtNumPeople" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtNumPeople" runat="server" MaxLength="5"></asp:TextBox>
     <asp:RequiredFieldValidator ID="rfv" runat="server" ErrorMessage="Number of People is Required" ControlToValidate="txtNumPeople" ValidationGroup="vgReq"></asp:RequiredFieldValidator>
     <asp:Label ID="lblNotAValidNumber" runat="server" Text="Please Enter a Valid Number of People" Visible="false"></asp:Label>
     <br /><br />
