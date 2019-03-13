@@ -32,12 +32,12 @@
                 <br /><br />
 
                 <label class="localdlbl">Location:</label>
-                <label class="locald" value="value">Ltest</label>
+                <asp:Label ID="Location" CssClass="locald" value="value">Ltest</asp:Label>
 
                 <br /><br />
 
                 <label class="biodlbl">Bio:</label>
-                <asp:Label ID="bioval" runat="server" CssClass="bioVal" Text="Label"></asp:Label>
+                <asp:Label ID="Bio" runat="server" CssClass="bioVal" Text="Label"></asp:Label>
 
                 <br /> <br /><br /><br />
 
@@ -50,6 +50,6 @@
             </content>
 
         </main>
-
+        <asp:PlaceHolder ID="MyPlaceholder" runat="server"></asp:PlaceHolder>
     </div>
 </asp:Content>

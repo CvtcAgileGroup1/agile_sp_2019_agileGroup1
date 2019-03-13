@@ -58,12 +58,21 @@ namespace AgileGameWebApp {
         protected global::System.Web.UI.WebControls.Label contactval;
         
         /// <summary>
-        /// bioval control.
+        /// Bio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label bioval;
+        protected global::System.Web.UI.WebControls.Label Bio;
+        
+        /// <summary>
+        /// MyPlaceholder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder MyPlaceholder;
     }
 }
